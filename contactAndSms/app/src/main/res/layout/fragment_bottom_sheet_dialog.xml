@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:paddingTop="8dp">
+
+    <!-- NOTE: This list should be displayed in a list
+    instead of nested layouts -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="16dp"
+        android:text="Send SMS"
+        android:textSize="17sp"
+        android:textColor="@android:color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        >
+        <EditText
+            android:id="@+id/sms_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:gravity="start|top"
+            android:text="Sms content"
+            />
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:text="SEND"
+            android:gravity="center"
+            android:layout_margin="16dp"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+
+</LinearLayout>
